@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT Help, Get a Usable Result</title>
+  <meta name="description" content="Calm help to get the output you want, whether you use ChatGPT paid, free, or not at all. Clear pricing. Three tiers.">
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#111827;
+      --text:#e5e7eb;
+      --muted:#cbd5e1;
+      --soft:#94a3b8;
+      --line:#243041;
+      --accent:#60a5fa;
+      --good:#22c55e;
+      --warn:#f59e0b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,var(--bg),#0a1220 60%,var(--bg));
+      color:var(--text);
+      line-height:1.5;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:26px 18px 60px}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      border:1px solid var(--line);
+      background:rgba(17,24,39,0.85);
+      border-radius:16px;
+      padding:18px;
+      overflow:hidden;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+      align-items:center;
+    }
+    @media (min-width: 860px){
+      .hero{grid-template-columns:1.15fr 0.85fr}
+    }
+    .badge{
+      display:inline-block;
+      font-size:12px;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:var(--soft);
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+    }
+    h1{
+      margin:12px 0 8px;
+      font-size:30px;
+      line-height:1.15;
+      letter-spacing:-0.02em;
+    }
+    .sub{
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+      max-width:64ch;
+    }
+    .pillRow{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .pill{
+      font-size:12px;
+      color:var(--soft);
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(12,22,40,0.25);
+    }
+    .imgCard{
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:rgba(12,22,40,0.55);
+      padding:10px;
+    }
+    .imgCard img{
+      width:100%;
+      height:auto;
+      border-radius:10px;
+      display:block;
+    }
+    .imgNote{
+      margin:8px 2px 0;
+      font-size:12px;
+      color:var(--soft);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+      margin-top:14px;
+    }
+    @media (min-width: 820px){
+      .grid{grid-template-columns:1fr 1fr}
+    }
+    section{
+      border:1px solid var(--line);
+      background:rgba(17,24,39,0.78);
+      border-radius:16px;
+      padding:18px;
+    }
+    h2{margin:0 0 10px;font-size:18px;letter-spacing:-0.01em}
+    p{margin:0 0 10px;color:var(--muted)}
+    ul{margin:0;padding-left:18px;color:var(--muted)}
+    li{margin:6px 0}
+    .hr{height:1px;background:var(--line);margin:14px 0;border:none}
+    .tiers{
+      margin-top:10px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+    }
+    @media (min-width: 920px){
+      .tiers{grid-template-columns:1fr 1fr 1fr}
+    }
+    .tier{
+      border:1px solid var(--line);
+      background:rgba(17,24,39,0.9);
+      border-radius:16px;
+      padding:16px;
+    }
+    .tag{
+      display:inline-block;
+      font-size:12px;
+      color:var(--soft);
+      border:1px solid var(--line);
+      padding:4px 8px;
+      border-radius:999px;
+      margin-bottom:10px;
+    }
+    .price{
+      font-size:26px;
+      font-weight:700;
+      margin:4px 0 10px;
+      letter-spacing:-0.02em;
+      color:var(--text);
+    }
+    .cta{
+      margin-top:14px;
+      border:1px solid rgba(96,165,250,0.35);
+      background:rgba(96,165,250,0.08);
+      border-radius:16px;
+      padding:18px;
+    }
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .btn{
+      display:inline-block;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:#0c1628;
+      color:var(--text);
+      font-weight:600;
+    }
+    .btn.primary{border:1px solid rgba(34,197,94,0.45);background:rgba(34,197,94,0.10)}
+    .btn.warn{border:1px solid rgba(245,158,11,0.45);background:rgba(245,158,11,0.10)}
+    .small{font-size:13px;color:var(--soft);margin-top:10px}
+    footer{margin-top:16px;padding:14px 4px 0;color:var(--soft);font-size:12px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="hero">
+        <div>
+          <span class="badge">Personal assistance</span>
+          <h1>Get a Usable Result From ChatGPT</h1>
+          <p class="sub">If you are frustrated with ChatGPT, I can help you get the output you want. This is for paid users, free users with limits, and people who do not have ChatGPT.</p>
+          <div class="pillRow">
+            <span class="pill">Paid users who feel stuck</span>
+            <span class="pill">Free users with limits</span>
+            <span class="pill">No ChatGPT needed</span>
+            <span class="pill">Clear pricing</span>
+          </div>
+        </div>
+
+        <div class="imgCard">
+          <img src="chatgpt-cool.png" alt="Friendly assistant illustration">
+          <div class="imgNote">Keep chatgpt-cool.png in the same folder as this HTML file.</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section>
+        <h2>What this is</h2>
+        <p>You tell me what you are trying to create. I rewrite your request clearly. I run it and give you a usable result.</p>
+        <p>If you pay for ChatGPT but still cannot get the result you want, this is for you.</p>
+        <p>If you use the free version and you hit limits, this is for you. I can run the request and provide the result.</p>
+        <p>If you do not have ChatGPT at all, this is for you. You describe what you want and I deliver a written result.</p>
+        <p>This is personal assistance. This is not training or coaching.</p>
+      </section>
+
+      <section>
+        <h2>Who this is for</h2>
+        <p>This is for you if:</p>
+        <ul>
+          <li>You keep getting the wrong output</li>
+          <li>You feel stuck and do not want to learn prompts</li>
+          <li>You use the free version and you hit limits</li>
+          <li>You do not have ChatGPT but you still want a written result</li>
+        </ul>
+        <hr class="hr">
+        <p>This is not for:</p>
+        <ul>
+          <li>AI hobbyists</li>
+          <li>People looking for lessons or courses</li>
+          <li>Ongoing consulting, automation, or app builds</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Common uses</h2>
+        <ul>
+          <li>Resumes or cover letters</li>
+          <li>Job applications</li>
+          <li>Emails</li>
+          <li>Facebook or Marketplace listings</li>
+          <li>Simple written content</li>
+        </ul>
+        <p class="small">If you are unsure, message me first and I will tell you if it fits.</p>
+      </section>
+
+      <section>
+        <h2>Important notes</h2>
+        <ul>
+          <li>This service does not guarantee results</li>
+          <li>I do not provide training or technical support</li>
+          <li>This is limited to written requests and outputs</li>
+        </ul>
+        <p class="small">If your request is outside this scope, I will tell you before you pay.</p>
+      </section>
+    </div>
+
+    <section style="margin-top:14px;">
+      <h2>Pricing</h2>
+
+      <div class="tiers">
+        <div class="tier">
+          <div class="tag">Best for one task</div>
+          <h3>Tier 1. One Shot Fix</h3>
+          <div class="price">$30</div>
+          <ul>
+            <li>One rewritten request</li>
+            <li>One finished output</li>
+            <li>One small revision if needed</li>
+          </ul>
+        </div>
+
+        <div class="tier">
+          <div class="tag">Best if you are stuck</div>
+          <h3>Tier 2. Live Clarity Session</h3>
+          <div class="price">$80</div>
+          <ul>
+            <li>30 minutes, one on one</li>
+            <li>Clarify what you want</li>
+            <li>Rewrite the request together</li>
+            <li>Run it live and adjust</li>
+          </ul>
+        </div>
+
+        <div class="tier">
+          <div class="tag">Best for repeat needs</div>
+          <h3>Tier 3. Reusable Setup</h3>
+          <div class="price">$200</div>
+          <ul>
+            <li>3 to 5 reusable request templates</li>
+            <li>Designed for one specific task only</li>
+            <li>Clear instructions on when to use each one</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta">
+        <h2>How to get started</h2>
+        <p>Message me with what you want to create and which tier you want. I will confirm if I can help.</p>
+
+        <div class="btns">
+          <a class="btn primary" id="msgLink" href="#">Message me</a>
+          <a class="btn" id="emailLink" href="mailto:YOUR_EMAIL_HERE">Email me</a>
+          <a class="btn warn" id="smsLink" href="#">Text me</a>
+        </div>
+
+        <p class="small">Replace the placeholders for your message link, email, and text number before publishing.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="yr"></span> Personal assistance page. Clear scope and clear pricing.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+
+    const messengerUrl = "#";
+    const smsUrl = "#";
+
+    document.getElementById("msgLink").setAttribute("href", messengerUrl);
+    document.getElementById("smsLink").setAttribute("href", smsUrl);
+  </script>
+</body>
+</html>
