@@ -87,11 +87,6 @@
       border-radius:10px;
       display:block;
     }
-    .imgNote{
-      margin:8px 2px 0;
-      font-size:12px;
-      color:var(--soft);
-    }
     .grid{
       display:grid;
       grid-template-columns:1fr;
@@ -184,8 +179,7 @@
         </div>
 
         <div class="imgCard">
-          <img src="chatgpt-cool.png" alt="Friendly assistant illustration">
-          <div class="imgNote">Keep chatgpt-cool.png in the same folder as this HTML file.</div>
+          <img src="hero.png" alt="Friendly assistant illustration">
         </div>
       </div>
     </header>
@@ -227,7 +221,7 @@
           <li>Facebook or Marketplace listings</li>
           <li>Simple written content</li>
         </ul>
-        <p class="small">If you are unsure, message me first and I will tell you if it fits.</p>
+        <p class="small">If you are unsure, email me first and I will tell you if it fits.</p>
       </section>
 
       <section>
@@ -282,15 +276,15 @@
 
       <div class="cta">
         <h2>How to get started</h2>
-        <p>Message me with what you want to create and which tier you want. I will confirm if I can help.</p>
+        <p>Email me with what you want to create and which tier you want. I will confirm if I can help.</p>
 
         <div class="btns">
-          <a class="btn primary" id="msgLink" href="#">Message me</a>
-          <a class="btn" id="emailLink" href="mailto:YOUR_EMAIL_HERE">Email me</a>
-          <a class="btn warn" id="smsLink" href="#">Text me</a>
+          <a class="btn primary" href="#" id="msgLink">Message me</a>
+          <a class="btn" href="mailto:mtltech24.7@gmail.com">Email me</a>
+          <a class="btn warn" href="#" id="smsLink">Text me</a>
         </div>
 
-        <p class="small">Replace the placeholders for your message link, email, and text number before publishing.</p>
+        <p class="small">Email: mtltech24.7@gmail.com</p>
       </div>
     </section>
 
@@ -299,14 +293,16 @@
     </footer>
   </div>
 
+
   <script>
     document.getElementById("yr").textContent = new Date().getFullYear();
 
-    const messengerUrl = "#";
-    const smsUrl = "#";
+    const messengerUrl = "https://m.me/mark.gittens.3517";
+    const smsUrl = "sms:+14386013763";
 
     document.getElementById("msgLink").setAttribute("href", messengerUrl);
     document.getElementById("smsLink").setAttribute("href", smsUrl);
   </script>
 </body>
 </html>
+
